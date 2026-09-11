@@ -1,5 +1,29 @@
 # FAKEu
 
+## Context sync protocol
+
+This file is the shared context source for the project. Treat it as the handoff note for both Codex agents when direct file sharing is not possible.
+
+Rules:
+
+- Read this file first when starting work or after a pull/rebase.
+- Update this file whenever the repo changes in a meaningful way.
+- Keep it short and practical: current feature, what changed, important files, blockers, and next steps.
+- Do not rely on raw repo memory alone; use this file as the common context anchor.
+- If one person makes a change, the next Codex should refresh from this README before continuing.
+
+Suggested format for updates:
+
+```text
+Current focus:
+Files touched:
+What changed:
+Open questions:
+Next step:
+```
+
+This keeps the repo context fresh without sharing full files.
+
 FAKEu is a Chrome extension for X (Twitter) that helps users assess the credibility of factual claims in posts. It gives a fast, clearly-labelled preliminary signal, then performs a slower evidence-based verification in the background.
 
 FAKEu does **not** decide whether an entire post or person is "true" or "fake." It evaluates specific, checkable claims and explains the available evidence.
