@@ -458,3 +458,7 @@ When working on this repository:
 - Return evidence-based verdicts with user-visible sources and timestamps.
 - Ask before choosing paid external providers or deploying production infrastructure.
 
+---
+
+Hi friend! Hope you’re doing well. Keep building, keep pushing, and let’s make this project awesome.
+
