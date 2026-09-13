@@ -473,6 +473,8 @@ When working on this repository:
 
 **Latest sync:** The extension scaffold and this handoff have been committed and pushed to `main`. No new functional extension change has been made since that handoff; the next implementation task remains the X content script.
 
+**Latest update:** `extensions /Fake-u/public/manifest.json` now explicitly lists `https://x.com/*` host patterns. This prepares the manifest for the upcoming X content script; the broader existing `https://*/*` permission already covers those URLs.
+
 ---
 
 Hi friend! Hope you’re doing well. Keep building, keep pushing, and let’s make this project awesome.

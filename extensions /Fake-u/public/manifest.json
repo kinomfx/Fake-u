@@ -6,7 +6,9 @@
     "permissions" : ["activeTab" ,"scripting"] , 
     "host_permissions" : [
         "https://*/*" , 
-        "http://*/*"
+        "http://*/*" , 
+        "https://x.com/*" , 
+        "https://x.com/*/*"
     ] , 
     "action" : {
         "default_popup" : "index.html" 
