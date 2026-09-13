@@ -8,6 +8,7 @@ Rules:
 
 - Read this file first when starting work or after a pull/rebase.
 - Update this file whenever the repo changes in a meaningful way.
+- Before every commit or push, re-read this file and update the current handoff when the outgoing work changes project state.
 - Keep it short and practical: current feature, what changed, important files, blockers, and next steps.
 - Do not rely on raw repo memory alone; use this file as the common context anchor.
 - If one person makes a change, the next Codex should refresh from this README before continuing.
