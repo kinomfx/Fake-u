@@ -458,7 +458,18 @@ When working on this repository:
 - Return evidence-based verdicts with user-visible sources and timestamps.
 - Ask before choosing paid external providers or deploying production infrastructure.
 
+## Current handoff — 2026-09-13
+
+**Current focus:** Extension shell / popup foundation.
+
+**Files added:** `extensions /Fake-u/` contains a Vite + React + TypeScript Chrome Manifest V3 project. Its key files are `public/manifest.json`, `src/App.tsx`, and `vite.config.ts`.
+
+**What changed:** The extension now builds to `extensions /Fake-u/dist/`. Load that `dist/` folder with Chrome's **Load unpacked** action; the popup currently displays “Welcome to FAKE-u”. The manifest and build output are valid.
+
+**Known limitation:** This is only a popup at the moment. There is no content script or service worker yet, so nothing appears inside `x.com` and it cannot read a post or call the backend.
+
+**Next step:** Add a content script registered for `https://x.com/*` to inject the **Check with FAKEu** button, then connect its click action to the mocked Go API.
+
 ---
 
 Hi friend! Hope you’re doing well. Keep building, keep pushing, and let’s make this project awesome.
-

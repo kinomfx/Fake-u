@@ -1,0 +1,14 @@
+{
+    "manifest_version" : 3 , 
+    "name" : "Fake-u" ,
+    "version" : "1.0.0" ,
+    "description" : "Fake-u is a Chrome extension that allows you to detect fake news and gives you a score ",
+    "permissions" : ["activeTab" ,"scripting"] , 
+    "host_permissions" : [
+        "https://*/*" , 
+        "http://*/*"
+    ] , 
+    "action" : {
+        "default_popup" : "index.html" 
+    }
+}   
