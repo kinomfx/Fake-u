@@ -475,6 +475,8 @@ When working on this repository:
 
 **Latest update:** `extensions /Fake-u/public/manifest.json` now explicitly lists `https://x.com/*` host patterns. This prepares the manifest for the upcoming X content script; the broader existing `https://*/*` permission already covers those URLs.
 
+**Latest update — 2026-09-15:** The popup was redesigned in `extensions /Fake-u/src/App.tsx`, `src/App.css`, and `src/index.css`. It now presents FAKEu branding, a short evidence-first explanation, two onboarding steps, and a privacy note. `npm run build` and `npm run lint` pass. The redesign has been approved for commit and push to `main`.
+
 ---
 
 Hi friend! Hope you’re doing well. Keep building, keep pushing, and let’s make this project awesome.

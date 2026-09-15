@@ -1,184 +1,50 @@
-.counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
-
-  &:hover {
-    border-color: var(--accent-border);
-  }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
+.popup {
+  width: 360px;
+  min-height: 470px;
+  padding: 22px;
+  color: #f7f8ff;
+  background:
+    radial-gradient(circle at 94% 4%, rgba(126, 101, 255, 0.36), transparent 29%),
+    radial-gradient(circle at 7% 63%, rgba(30, 197, 174, 0.12), transparent 30%),
+    #111226;
 }
 
-.hero {
-  position: relative;
+.brand-row { display: flex; align-items: center; gap: 9px; }
 
-  .base,
-  .framework,
-  .vite {
-    inset-inline: 0;
-    margin: 0 auto;
-  }
-
-  .base {
-    width: 170px;
-    position: relative;
-    z-index: 0;
-  }
-
-  .framework,
-  .vite {
-    position: absolute;
-  }
-
-  .framework {
-    z-index: 1;
-    top: 34px;
-    height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
-  }
-
-  .vite {
-    z-index: 0;
-    top: 107px;
-    height: 26px;
-    width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
-  }
+.brand-mark {
+  display: grid; width: 32px; height: 32px; place-items: center; border-radius: 10px;
+  background: linear-gradient(135deg, #a38aff, #635bdb);
+  box-shadow: 0 6px 18px rgba(87, 72, 198, 0.42);
 }
 
-#center {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  place-content: center;
-  place-items: center;
-  flex-grow: 1;
+.brand-mark svg { width: 20px; stroke: white; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+.brand-name { font-size: 20px; font-weight: 800; letter-spacing: -0.8px; }
+.brand-name span { color: #a797ff; }
 
-  @media (max-width: 1024px) {
-    padding: 32px 20px 24px;
-    gap: 18px;
-  }
+.beta-label {
+  margin-left: auto; padding: 4px 7px; border: 1px solid rgba(184, 172, 255, 0.28);
+  border-radius: 999px; color: #c9c0ff; font-size: 9px; font-weight: 800; letter-spacing: 0.9px;
 }
 
-#next-steps {
-  display: flex;
-  border-top: 1px solid var(--border);
-  text-align: left;
+.hero-copy { padding: 42px 2px 29px; }
+.eyebrow { margin: 0 0 10px; color: #a9f0de; font-size: 11px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase; }
 
-  & > div {
-    flex: 1 1 0;
-    padding: 32px;
-    @media (max-width: 1024px) {
-      padding: 24px 20px;
-    }
-  }
-
-  .icon {
-    margin-bottom: 16px;
-    width: 22px;
-    height: 22px;
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    text-align: center;
-  }
+.hero-copy h1 {
+  margin: 0; color: #fff; font-size: 38px; font-weight: 750; letter-spacing: -1.8px; line-height: 0.98;
 }
 
-#docs {
-  border-right: 1px solid var(--border);
+.intro { margin: 18px 0 0; color: #b9bdd0; font-size: 14px; line-height: 1.55; }
 
-  @media (max-width: 1024px) {
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
+.how-it-works {
+  display: grid; grid-template-columns: 31px 1fr; gap: 0 12px; padding: 17px;
+  border: 1px solid rgba(231, 234, 255, 0.1); border-radius: 16px; background: rgba(255, 255, 255, 0.055);
 }
 
-#next-steps ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 8px;
-  margin: 32px 0 0;
+.step-number { padding-top: 2px; color: #9187d7; font-size: 11px; font-weight: 800; letter-spacing: 0.5px; }
+.how-it-works h2 { margin: 0 0 3px; color: #f2f3fc; font-size: 13px; font-weight: 700; }
+.how-it-works p { margin: 0 0 14px; color: #a7abbd; font-size: 12px; line-height: 1.42; }
+.how-it-works p:last-child { margin-bottom: 0; }
+.how-it-works strong { color: #d8d3ff; font-weight: 650; }
 
-  .logo {
-    height: 18px;
-  }
-
-  a {
-    color: var(--text-h);
-    font-size: 16px;
-    border-radius: 6px;
-    background: var(--social-bg);
-    display: flex;
-    padding: 6px 12px;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    transition: box-shadow 0.3s;
-
-    &:hover {
-      box-shadow: var(--shadow);
-    }
-    .button-icon {
-      height: 18px;
-      width: 18px;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    li {
-      flex: 1 1 calc(50% - 8px);
-    }
-
-    a {
-      width: 100%;
-      justify-content: center;
-      box-sizing: border-box;
-    }
-  }
-}
-
-#spacer {
-  height: 88px;
-  border-top: 1px solid var(--border);
-  @media (max-width: 1024px) {
-    height: 48px;
-  }
-}
-
-.ticks {
-  position: relative;
-  width: 100%;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: -4.5px;
-    border: 5px solid transparent;
-  }
-
-  &::before {
-    left: 0;
-    border-left-color: var(--border);
-  }
-  &::after {
-    right: 0;
-    border-right-color: var(--border);
-  }
-}
+.popup-footer { display: flex; align-items: center; gap: 7px; padding: 17px 2px 0; color: #858ba5; font-size: 10px; }
+.privacy-dot { width: 6px; height: 6px; border-radius: 50%; background: #57d2b8; box-shadow: 0 0 0 3px rgba(87, 210, 184, 0.12); }
