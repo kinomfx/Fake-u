@@ -473,9 +473,11 @@ When working on this repository:
 
 **Latest sync:** The extension scaffold and this handoff have been committed and pushed to `main`. No new functional extension change has been made since that handoff; the next implementation task remains the X content script.
 
-**Latest update:** `extensions /Fake-u/public/manifest.json` now explicitly lists `https://x.com/*` host patterns. This prepares the manifest for the upcoming X content script; the broader existing `https://*/*` permission already covers those URLs.
+**Latest update:** `extensions /Fake-u/public/manifest.json` now restricts host access to `https://x.com/*` only. FAKEu is scoped to X and no longer requests broad HTTP/HTTPS site access.
 
 **Latest update — 2026-09-15:** The popup was redesigned in `extensions /Fake-u/src/App.tsx`, `src/App.css`, and `src/index.css`. It now presents FAKEu branding, a short evidence-first explanation, two onboarding steps, and a privacy note. `npm run build` and `npm run lint` pass. The redesign has been approved for commit and push to `main`.
+
+**Latest update — 2026-09-15:** The popup includes a **Meet the developers** section with external GitHub links for Kinom (`kinomfx`) and Keshav (`Keshav-Goyal-04`). The updated popup builds and lints successfully and is approved for commit and push.
 
 ---
 

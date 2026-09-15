@@ -36,6 +36,28 @@ function App() {
         </div>
       </section>
 
+      <section className="developers" aria-labelledby="developers-title">
+        <p id="developers-title" className="developers-label">Meet the developers</p>
+        <div className="developer-links">
+          <a href="https://github.com/kinomfx" target="_blank" rel="noreferrer">
+            <span className="developer-avatar avatar-kinom">K</span>
+            <span>
+              <strong>Kinom</strong>
+              <small>@kinomfx</small>
+            </span>
+            <span className="external-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="https://github.com/Keshav-Goyal-04" target="_blank" rel="noreferrer">
+            <span className="developer-avatar avatar-keshav">K</span>
+            <span>
+              <strong>Keshav</strong>
+              <small>@Keshav-Goyal-04</small>
+            </span>
+            <span className="external-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
       <footer className="popup-footer">
         <span className="privacy-dot" aria-hidden="true" />
         Public posts only. No DMs, no account scoring.

@@ -4,12 +4,7 @@
     "version" : "1.0.0" ,
     "description" : "Fake-u is a Chrome extension that allows you to detect fake news and gives you a score ",
     "permissions" : ["activeTab" ,"scripting"] , 
-    "host_permissions" : [
-        "https://*/*" , 
-        "http://*/*" , 
-        "https://x.com/*" , 
-        "https://x.com/*/*"
-    ] , 
+    "host_permissions" : ["https://x.com/*"] , 
     "action" : {
         "default_popup" : "index.html" 
     }
