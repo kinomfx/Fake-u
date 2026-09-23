@@ -479,6 +479,8 @@ When working on this repository:
 
 **Latest update — 2026-09-15:** The popup includes a **Meet the developers** section with external GitHub links for Kinom (`kinomfx`) and Keshav (`Keshav-Goyal-04`). The updated popup builds and lints successfully and is approved for commit and push.
 
+**Latest update — 2026-09-24:** A Go backend skeleton is now in `backend/`. The current entry point is `backend/cmd/Fake-u/main.go`; it intentionally contains only an empty `main` function. Future application packages will live under `backend/internal/`, while configuration will be separated by environment for development and production. No API routes, storage logic, or NLP integration have been implemented yet.
+
 ---
 
 Hi friend! Hope you’re doing well. Keep building, keep pushing, and let’s make this project awesome.
