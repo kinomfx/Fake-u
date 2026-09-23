@@ -479,7 +479,7 @@ When working on this repository:
 
 **Latest update — 2026-09-15:** The popup includes a **Meet the developers** section with external GitHub links for Kinom (`kinomfx`) and Keshav (`Keshav-Goyal-04`). The updated popup builds and lints successfully and is approved for commit and push.
 
-**Latest update — 2026-09-24:** A Go backend skeleton is now in `backend/`. The current entry point is `backend/cmd/Fake-u/main.go`; it intentionally contains only an empty `main` function. Future application packages will live under `backend/internal/`, while configuration will be separated by environment for development and production. No API routes, storage logic, or NLP integration have been implemented yet.
+**Latest update — 2026-09-24:** The Go backend now has its first runnable HTTP skeleton. `backend/cmd/Fake-u/main.go` loads configuration, creates a `net/http` mux, and starts the server at the configured address. `backend/Internals/Config/config.go` loads YAML configuration from `CONFIG_PATH` or `-config`; local configuration under `backend/Config/` is ignored by Git. `backend/Internals/handler/FakeNews/FakeNews.go` provides the temporary `POST /api/GetFakenewsData` endpoint, which currently returns a placeholder response. The backend module builds successfully. Future application packages will continue under `backend/Internals/`, with separate development and production configuration.
 
 ---
 
