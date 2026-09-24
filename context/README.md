@@ -481,6 +481,8 @@ When working on this repository:
 
 **Latest update — 2026-09-24:** The Go backend now has its first runnable HTTP skeleton. `backend/cmd/Fake-u/main.go` loads configuration, creates a `net/http` mux, and starts the server at the configured address. `backend/Internals/Config/config.go` loads YAML configuration from `CONFIG_PATH` or `-config`; local configuration under `backend/Config/` is ignored by Git. `backend/Internals/handler/FakeNews/FakeNews.go` provides the temporary `POST /api/GetFakenewsData` endpoint, which currently returns a placeholder response. The backend module builds successfully. Future application packages will continue under `backend/Internals/`, with separate development and production configuration.
 
+**Latest update — 2026-09-24:** `POST /api/GetFakenewsData` now decodes a JSON fake-news payload and returns a JSON `201 Created` response; an empty request body returns `400 Bad Request`. `backend/Internals/types/FakeNews/FakeNews_Model.go` defines the current `ID`, `FakeNewsData`, and `Created_at` model fields, while `backend/Internals/utils/response/response.go` centralizes JSON HTTP responses. The endpoint currently logs the supplied text only; validation, database storage, and fact-check processing are still next.
+
 ---
 
 Hi friend! Hope you’re doing well. Keep building, keep pushing, and let’s make this project awesome.
